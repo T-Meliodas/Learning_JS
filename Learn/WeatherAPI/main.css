@@ -1,0 +1,47 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.main {
+  background-color: rgb(203, 219, 219);
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+}
+
+h1 {
+  color: rgb(205, 129, 36);
+  padding: 20px;
+  height: 160px;
+  border-radius: 10px;
+  margin-top: 50px;
+  font-family: Arial;
+  font-size: 60px;
+}
+#weather {
+  width: 500px;
+  height: 152px;
+  background-color: antiquewhite;
+  margin-top: 50px;
+  font-size: 15px;
+  position: relative;
+  top: 80px;
+  right: 500px;
+  align-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 5px;
+  border-radius: 10px;
+}
+.view {
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+}
+.weather7 {
+  display: inline-block;
+  padding-left: 30px;
+}
