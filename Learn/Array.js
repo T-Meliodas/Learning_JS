@@ -39,3 +39,6 @@ console.log(newName);
 
 // let total = newArr.reduce((index, current) => index + current, 0);
 // console.log(total);
+
+
+//
