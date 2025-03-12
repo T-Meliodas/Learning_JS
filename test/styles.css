@@ -1,0 +1,183 @@
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4; /* Màu nền trung tính */
+  color: #333;
+}
+
+/* Header */
+header {
+  background: #2c3e50; /* Màu chính: xanh dương đậm */
+  color: #fff;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .logo {
+  font-family: "Montserrat", sans-serif;
+  font-size: 24px;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+}
+
+header nav ul li {
+  margin-left: 20px;
+}
+
+header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+header nav ul li a:hover {
+  color: #f39c12; /* Màu phụ: cam */
+}
+
+header .search input {
+  padding: 5px;
+  border-radius: 5px;
+  border: none;
+}
+
+/* Hero Section */
+.hero {
+  background: url("hero-background.jpg") no-repeat center center/cover;
+  color: #fff;
+  text-align: center;
+  padding: 100px 20px;
+  position: relative;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Overlay mờ */
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+}
+
+.hero h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+
+.cta-button {
+  background: #f39c12; /* Màu phụ: cam */
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.cta-button:hover {
+  background: #e67e22; /* Hiệu ứng hover */
+}
+
+/* Main Content */
+.main-content {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.main-content h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.content-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.content-item {
+  background: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.content-item:hover {
+  transform: translateY(-5px); /* Hiệu ứng hover */
+}
+
+.content-item h3 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+  background: #2c3e50; /* Màu chính: xanh dương đậm */
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+footer .social-links a {
+  color: #fff;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+footer .social-links a:hover {
+  color: #f39c12; /* Màu phụ: cam */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  header nav ul {
+    display: none; /* Hamburger menu có thể thêm sau */
+  }
+
+  .hero h1 {
+    font-size: 32px;
+  }
+
+  .hero p {
+    font-size: 18px;
+  }
+
+  .content-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Accessibility */
+:focus {
+  outline: 2px solid #f39c12;
+  outline-offset: 2px;
+}
